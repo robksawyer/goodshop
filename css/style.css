@@ -38,7 +38,6 @@ body a{
 	-moz-box-shadow: 0px 0px 4px #C9C9C9;
 	-o-box-shadow: 0px 0px 4px #C9C9C9;
 	-ms-box-shadow: 0px 0px 4px #C9C9C9;
-
 }
 .top-nav ul li a{
 	color: #7E7C7E;
@@ -508,6 +507,10 @@ span.second{
 	display:inline-block;
 	background:url(../images/feature-icons-l.png) no-repeat 0px 0px;
 	margin-top:1em;
+}
+.features-icon i,
+.features-icon1 i{
+  color: #C9C9C9;
 }
 .features-icon span.f-icon1{
 	background-position: 0px -200px;
