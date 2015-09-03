@@ -7,6 +7,12 @@
     "npm": "1.4.*"
   },
   "main": "web.js",
+  "scripts": {
+    "start": "node web.js",
+    "debug": "node web.js",
+    "test": "make test",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  },
   "dependencies": {
     "express": "3.4.x",
     "bower": "^1.5.2"
