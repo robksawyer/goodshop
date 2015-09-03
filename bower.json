@@ -1,0 +1,30 @@
+{
+  "name": "goodshop-landing",
+  "version": "1.0.0",
+  "homepage": "https://github.com/robksawyer/goodshop",
+  "authors": [
+    "robksawyer <robksawyer@gmail.com>"
+  ],
+  "description": "Interface to deals",
+  "main": "web.js",
+  "keywords": [
+    "shopping",
+    "good",
+    "shop",
+    "thrift",
+    "stores",
+    "goodwill"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
