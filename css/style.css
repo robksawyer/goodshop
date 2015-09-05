@@ -434,6 +434,11 @@ nav a#pull {
 	color: #282528;
 	margin-right: 0.6em;
 }
+.big-btns .badges a {
+  border: 0 !important;
+  padding: 0.3em 0.1em;
+  float: left;
+}
 .big-btns a:hover{
 	text-decoration:none;
 	color:#282528;
@@ -461,7 +466,11 @@ nav a#pull {
 	position: absolute;
 	bottom: 0px;
 	z-index: 999;
-	right: 10%;
+  top: 30%;
+	right: 15%;
+}
+a.view{
+  display: none !important;
 }
 .header-section{
 	position:relative;
@@ -843,6 +852,9 @@ p.copy a:hover{
 }
 /*--responsive design--*/
 @media (max-width:1024px){
+  a.view {
+    display: none !important;
+  }
 	.device-demo img{
 		width:80%;
 	}
@@ -851,8 +863,13 @@ p.copy a:hover{
 		left: 8%;
 	}
 	.device-demo{
+    top: 33%;
 		right:0;
 	}
+  .big-btns .badges a {
+    border: 0 !important;
+    padding: 0.3em 0.1em;
+  }
 	.big-device img{
 		width:100%;
 	}
@@ -915,6 +932,11 @@ p.copy a:hover{
 		padding: 0.5em 0.8em 0.5em 0.8em;
 		font-size: 0.8em;
 	}
+  .big-btns .badges a {
+    border: 0 !important;
+    padding: 0.5em 0.1em 0.5em 0.1em;
+    font-size: 0.8em;
+  }
 	.callbacks_tabs a:after {
 		height: 10px;
 		width: 10px;
@@ -945,6 +967,9 @@ p.copy a:hover{
 }
 /*-----640px-mediaquries----*/
 @media (max-width:640px){
+  a.view {
+    display: none !important;
+  }
 	.device-demo img{
 		width: 47%;
 	}
@@ -992,6 +1017,10 @@ p.copy a:hover{
 		padding: 0.3em 0.8em;
 		font-size: 0.8em;
 	}
+  .big-btns .badges a {
+    border: 0 !important;
+    padding: 0.3em 0.1em;
+  }
 	.callbacks_tabs a:after {
 		height: 10px;
 		width: 10px;
@@ -1031,6 +1060,9 @@ p.copy a:hover{
 }
 /*-----480px-mediaquries----*/
 @media (max-width:480px){
+  a.view {
+    display: none !important;
+  }
 	.device-demo img{
 		width: 35%;
 	}
@@ -1079,6 +1111,10 @@ p.copy a:hover{
 		padding: 0.5em 0.8em;
 		font-size: 0.7em;
 	}
+  .big-btns .badges a {
+    border: 0 !important;
+    padding: 0.3em 0.1em;
+  }
 	.callbacks_tabs a:after {
 		height: 10px;
 		width: 10px;
@@ -1131,6 +1167,9 @@ p.copy a:hover{
 }
 /*-----320px-mediaquries----*/
 @media (max-width:320px){
+  a.view {
+    display: none !important;
+  }
 	.device-demo img{
 		width: 30%;
 	}
@@ -1182,6 +1221,10 @@ p.copy a:hover{
 		padding: 0.4em 0.5em;
 		font-size: 0.6em;
 	}
+  .big-btns .badges a {
+    border: 0 !important;
+    padding: 0.3em 0.1em;
+  }
 	.callbacks_tabs a:after {
 		height: 10px;
 		width: 10px;
