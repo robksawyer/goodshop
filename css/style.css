@@ -1071,6 +1071,7 @@ p.copy a:hover{
 		left: 6%;
 	}
 	.device-demo{
+    top: 45% !important;
 		right: 4%;
 		text-align:right;
 	}
@@ -1111,9 +1112,15 @@ p.copy a:hover{
 		padding: 0.5em 0.8em;
 		font-size: 0.7em;
 	}
+  .big-btns .badges img {
+    padding: 0;
+    margin: 0;
+  }
   .big-btns .badges a {
     border: 0 !important;
-    padding: 0.3em 0.1em;
+    padding: 0em 0.2em !important;
+    margin: 0em !important;
+    width: 18%;
   }
 	.callbacks_tabs a:after {
 		height: 10px;
@@ -1216,14 +1223,18 @@ p.copy a:hover{
 	.slide-text ul li:nth-child(2){
 		display:none;
 	}
-	.big-btns a {
+  .big-btns a {
 		border: 1px solid #282528;
-		padding: 0.4em 0.5em;
-		font-size: 0.6em;
+		padding: 0.5em 0.8em;
+		font-size: 0.7em;
 	}
+  .big-btns .badges img {
+    width: 61%;
+  }
   .big-btns .badges a {
     border: 0 !important;
-    padding: 0.3em 0.1em;
+    padding: 0em !important;
+    margin: 0em !important;
   }
 	.callbacks_tabs a:after {
 		height: 10px;
