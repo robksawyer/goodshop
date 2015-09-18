@@ -1121,6 +1121,7 @@ p.copy a:hover{
     padding: 0em 0.2em !important;
     margin: 0em !important;
     width: 18%;
+    z-index: 1999;
   }
 	.callbacks_tabs a:after {
 		height: 10px;
