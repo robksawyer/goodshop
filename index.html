@@ -160,11 +160,11 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 							<div class="clearfix"> </div>
 							<div class="big-btns">
 								<div class="badges">
-									<a href="https://play.google.com/store/apps/details?id=com.goodshop.shopgoodwill" target="_blank" title="Get it on Google Play.">
-										<img src="images/google_badge.png" alt="Google Play">
+									<a href="https://play.google.com/store/apps/details?id=com.goodshop.shopgoodwill" target="_blank" title="Get it on Google Play." role="button">
+										<img src="images/google_badge.png" alt="Google Play" />
 									</a>
-									<a href="https://itunes.apple.com/us/app/goood-shop/id1036097357?ls=1&amp;mt=8" target="_blank" title="Get it in the Apple Store.">
-										<img src="images/apple_store_badge.png" alt="Apple Store">
+									<a href="https://itunes.apple.com/us/app/goood-shop/id1036097357?ls=1&amp;mt=8" target="_blank" title="Get it in the Apple Store." role="button">
+										<img src="images/apple_store_badge.png" alt="Apple Store" />
 									</a>
 								</div>
 								<a class="view" id="view-gallery" href="#gallery">
@@ -356,6 +356,19 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 							$().UItoTop({
 								easingType: 'easeOutQuart'
 							});
+
+							IS_IPAD = navigator.userAgent.match(/iPad/i) != null;
+							IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
+
+							if (IS_IPAD || IS_IPHONE) {
+
+									$('a').on('click touchend', function() {
+											var link = $(this).attr('href');
+											window.open(link,'_blank'); // opens in new window as requested
+
+											return false; // prevent anchor click
+									});
+							}
 						});
 					</script>
 					<a href="#" id="toTop" style="display: block;">
