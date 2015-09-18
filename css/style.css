@@ -869,6 +869,7 @@ p.copy a:hover{
   .big-btns .badges a {
     border: 0 !important;
     padding: 0.3em 0.1em;
+    z-index: 999 !important;
   }
 	.big-device img{
 		width:100%;
