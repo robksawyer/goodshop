@@ -160,10 +160,10 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 							<div class="clearfix"> </div>
 							<div class="big-btns">
 								<div class="badges">
-									<a href="https://play.google.com/store/apps/details?id=com.goodshop.shopgoodwill" target="_blank" title="Get it on Google Play." role="button">
+									<a href="https://play.google.com/store/apps/details?id=com.goodshop.shopgoodwill" target="_blank" class="button" title="Get it on Google Play." role="button">
 										<img src="images/google_badge.png" alt="Google Play" />
 									</a>
-									<a href="https://itunes.apple.com/us/app/goood-shop/id1036097357?ls=1&amp;mt=8" target="_blank" title="Get it in the Apple Store." role="button">
+									<a href="https://itunes.apple.com/us/app/goood-shop/id1036097357?ls=1&amp;mt=8" target="_blank" class="button" title="Get it in the Apple Store." role="button">
 										<img src="images/apple_store_badge.png" alt="Apple Store" />
 									</a>
 								</div>
@@ -358,7 +358,7 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 							});
 
 							//iOS anchor fix
-							$('a[role="button"]').on('click touchend', function() {
+							$('a.button]').on('click touchend', function() {
 									var link = $(this).attr('href');
 									window.open(link,'_blank'); // opens in new window as requested
 									return false; // prevent anchor click
