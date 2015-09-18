@@ -9,6 +9,7 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 |_______|_______|_______|_______|______|  |_______|__| |__|_______|___|
 -->
 <html>
+
 <head>
 	<title>Goood Shop | Mobile</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69,12 +70,19 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 		});
 	</script>
 	<script type="text/javascript">
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-67137743-1', 'auto');
-	ga('send', 'pageview');
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-67137743-1', 'auto');
+		ga('send', 'pageview');
 	</script>
 	<!-- //End-top-nav-script -->
 </head>
@@ -112,20 +120,20 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 		<script src="js/responsiveslides.min.js"></script>
 		<script type="text/javascript">
 			// You can also use "$(window).load(function() {"
-			$(function () {
-			  $("#slider4").responsiveSlides({
-			    auto: false,
-			    pager: false,
-			    nav: false,
-			    speed: 500,
-			    namespace: "callbacks",
-			    before: function () {
-			      $('.events').append("<li>before event fired.</li>");
-			    },
-			    after: function () {
-			      $('.events').append("<li>after event fired.</li>");
-			    }
-			  });
+			$(function() {
+				$("#slider4").responsiveSlides({
+					auto: false,
+					pager: false,
+					nav: false,
+					speed: 500,
+					namespace: "callbacks",
+					before: function() {
+						$('.events').append("<li>before event fired.</li>");
+					},
+					after: function() {
+						$('.events').append("<li>after event fired.</li>");
+					}
+				});
 			});
 		</script>
 		<!-- //End-slider-script -->
@@ -151,11 +159,15 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 							</div>
 							<div class="clearfix"> </div>
 							<div class="big-btns">
-									<div class="badges">
-										<a href="https://play.google.com/store/apps/details?id=com.goodshop.shopgoodwill" target="_blank" title="Get it on Google Play."><img src="images/google_badge.png" alt="Google Play"></a>
-										<a href="https://itunes.apple.com/us/app/goood-shop/id1036097357?ls=1&amp;mt=8" target="_blank" title="Get it in the Apple Store."><img src="images/apple_store_badge.png" alt="Apple Store"></a>
-									</div>
-									<a class="view" id="view-gallery" href="#gallery">
+								<div class="badges">
+									<a href="https://play.google.com/store/apps/details?id=com.goodshop.shopgoodwill" target="_blank" title="Get it on Google Play.">
+										<img src="images/google_badge.png" alt="Google Play">
+									</a>
+									<a href="https://itunes.apple.com/us/app/goood-shop/id1036097357?ls=1&amp;mt=8" target="_blank" title="Get it in the Apple Store.">
+										<img src="images/apple_store_badge.png" alt="Apple Store">
+									</a>
+								</div>
+								<a class="view" id="view-gallery" href="#gallery">
 										View Gallery
 									</a>
 							</div>
@@ -178,8 +190,9 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 		<div class="container">
 			<div class="section-head text-center">
 				<h3>
-					<span class="first">&nbsp;</span>AMAZING FEATURES
-					<!-- <span class="second">&nbsp;</span> -->
+					<span class="first">&nbsp;</span>
+					AMAZING FEATURES
+					<span class="second">&nbsp;</span>
 				</h3>
 				<p>Our primary focus was on building an app that allows you to quickly and easily search and browse the items from online thrift shops with zero gimmicks.</p>
 			</div>
@@ -267,8 +280,9 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 			<div class="container">
 				<div class="section-head text-center">
 					<h3>
-						<span class="first"> </span>APP SCREENSHOTS
-						<span class="second"> </span>
+						<span class="first">&nbsp;</span>
+						APP SCREENSHOTS
+						<span class="second">&nbsp;</span>
 					</h3>
 					<p>See the following screenshots for a better idea of the experience. Please note that the app is responsive and will work on your iPad as well.</p>
 				</div>
@@ -313,7 +327,7 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 					<div class="col-md-6 footer-grid about-info">
 						<div class="col-md-3">
 							<a href="http://www.gooodshop.us">
-								<img src="images/icon-40@2x.png" title="Goood Shop App" alt="app-icon"/>
+								<img src="images/icon-40@2x.png" title="Goood Shop App" alt="app-icon" />
 							</a>
 						</div>
 						<div class="col-md-6">
@@ -352,4 +366,5 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 		</div>
 	</div>
 </body>
+
 </html>
