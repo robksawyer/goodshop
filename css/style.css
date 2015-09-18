@@ -438,6 +438,7 @@ nav a#pull {
   border: 0 !important;
   padding: 0.3em 0.1em;
   float: left;
+  z-index: 999 !important;
 }
 .big-btns a:hover{
 	text-decoration:none;
@@ -937,6 +938,7 @@ p.copy a:hover{
     border: 0 !important;
     padding: 0.5em 0.1em 0.5em 0.1em;
     font-size: 0.8em;
+    z-index: 999 !important;
   }
 	.callbacks_tabs a:after {
 		height: 10px;
@@ -1021,6 +1023,7 @@ p.copy a:hover{
   .big-btns .badges a {
     border: 0 !important;
     padding: 0.3em 0.1em;
+    z-index: 999 !important;
   }
 	.callbacks_tabs a:after {
 		height: 10px;
@@ -1237,6 +1240,7 @@ p.copy a:hover{
     border: 0 !important;
     padding: 0em !important;
     margin: 0em !important;
+    z-index: 999 !important;
   }
 	.callbacks_tabs a:after {
 		height: 10px;
