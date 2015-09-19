@@ -1,4 +1,4 @@
 # Goood Shop
->The landing page for the Shop Good app.
+>The landing page for the Goood Shop app.
 
-![logo](http://s9.postimg.org/e3yf6pdbf/icon_72_2x.png)
+![logo](http://s18.postimg.org/574pppxph/icon_72_2x.png)
