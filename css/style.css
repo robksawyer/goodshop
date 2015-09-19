@@ -39,6 +39,9 @@ body a{
 	-o-box-shadow: 0px 0px 4px #C9C9C9;
 	-ms-box-shadow: 0px 0px 4px #C9C9C9;
 }
+.top-nav{
+  z-index: 997;
+}
 .top-nav ul li a{
 	color: #7E7C7E;
 	padding: 0.2em 1.5em;
@@ -93,6 +96,11 @@ nav a:hover{
 nav a#pull {
 	display: none;
 }
+
+.big-btns{
+  z-index: 999;
+}
+
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 768px) {
 	nav {
@@ -109,12 +117,13 @@ nav a#pull {
   		position: relative;
   	}
   	nav li a {
-		border-bottom: 1px solid #eee;
-	}
+		  border-bottom: 1px solid #eee;
+	  }
   	nav a {
 	  	text-align: left;
 	  	width: 100%;
   	}
+
 }
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width : 768px) {
@@ -219,7 +228,18 @@ nav a#pull {
   position: relative;
   float: left;
   width: 100%;
+  z-index: 999;
 }
+
+.slide-container{
+  display: block;
+  width: 800px;
+  min-height: 250px;
+  height: 470px;
+  background-color: #F0AE1D;
+  overflow:hidden;
+}
+
 .callbacks {
   position: relative;
   list-style: none;
@@ -390,8 +410,9 @@ nav a#pull {
 .slide-text-info{
 	margin: 2.5% 0;
 	text-align: left;
-	position: absolute;
-	left: 16%;
+	position: relative;
+  font-size: 140%;
+	left: 10%;
 }
 .slide-text p{
 	font-size: 0.872em;
@@ -422,10 +443,10 @@ nav a#pull {
 }
 /*----*/
 .big-btns{
-	margin: 1.5em 2em;
-	display: block;
+  position: relative;
+  margin: 13% 0 0 17%;
 }
-.big-btns a{
+/*.big-btns a{
 	display: inline-block;
 	border: 3px solid #282528;
 	padding: 0.5em 1.2em 0.5em 0.8em;
@@ -433,14 +454,13 @@ nav a#pull {
 	font-weight: 600;
 	color: #282528;
 	margin-right: 0.6em;
-}
+}*/
 .big-btns .badges a {
   border: 0 !important;
   padding: 0.3em 0.1em;
   float: left;
-  z-index: 999 !important;
 }
-.big-btns a:hover{
+/*.big-btns a:hover{
 	text-decoration:none;
 	color:#282528;
 	opacity:0.9;
@@ -459,16 +479,19 @@ nav a#pull {
 }
 .big-btns a.view label{
 	background-position:-41px 0px;
-}
+}*/
 .slide-text {
 	margin: 1.2em;
 }
 .device-demo{
 	position: absolute;
 	bottom: 0px;
-	z-index: 998;
-  top: 30%;
-	right: 15%;
+  top: 3%;
+	right: 7%;
+  z-index: 5;
+  width: 400px;
+  height: 600px;
+  float: right;
 }
 a.view{
   display: none !important;
@@ -860,12 +883,17 @@ p.copy a:hover{
 		width:80%;
 	}
 	.slide-text-info {
-		margin: 0% 0;
-		left: 8%;
+    position: relative;
+		margin: 5% 0;
+		left: 14%;
+    font-size: 100%;
 	}
 	.device-demo{
-    top: 33%;
-		right:0;
+    top: 3%;
+		right: -6%;
+    width: 400px;
+    height: 600px;
+    float: right;
 	}
   .big-btns .badges a {
     border: 0 !important;
@@ -888,16 +916,23 @@ p.copy a:hover{
 }
 /*-----768px-mediaquries----*/
 @media (max-width:768px){
+  .slide-container{
+    height: 300px;
+  }
 	.device-demo img{
 		width: 57%;
 	}
 	.slide-text-info {
-		margin: -2% 0 0;
+		margin: 4% 0 0;
 		left: 10%;
 	}
 	.device-demo{
 		right: 5%;
 		text-align: right;
+    z-index: 5;
+    width: 400px;
+    height: 600px;
+    float: right;
 	}
 	.big-device img{
 		width:initial;
@@ -929,11 +964,11 @@ p.copy a:hover{
 	.slide-text ul li:nth-child(2){
 		display:none;
 	}
-	.big-btns a {
+	/*.big-btns a {
 		border: 2px solid #282528;
 		padding: 0.5em 0.8em 0.5em 0.8em;
 		font-size: 0.8em;
-	}
+	}*/
   .big-btns .badges a {
     border: 0 !important;
     padding: 0.5em 0.1em 0.5em 0.1em;
@@ -977,12 +1012,16 @@ p.copy a:hover{
 		width: 47%;
 	}
 	.slide-text-info {
-		margin: -4% 0 0;
+		margin: 4% 0 0;
 		left: 10%;
 	}
 	.device-demo{
 		right: 5%;
 		text-align: right;
+    z-index: 5;
+    width: 400px;
+    height: 600px;
+    float: right;
 	}
 	.big-device img{
 		width:initial;
@@ -1015,11 +1054,11 @@ p.copy a:hover{
 	.slide-text ul li:nth-child(2){
 		display:none;
 	}
-	.big-btns a {
+	/*.big-btns a {
 		border: 1px solid #282528;
 		padding: 0.3em 0.8em;
 		font-size: 0.8em;
-	}
+	}*/
   .big-btns .badges a {
     border: 0 !important;
     padding: 0.3em 0.1em;
@@ -1054,8 +1093,8 @@ p.copy a:hover{
 		display: inline-block;
 	}
 	.big-btns {
-		margin: 0.8em 0em;
-		display: block;
+    position: relative;
+		margin: 13% 0 0 17%;
 	}
 	.show-reel h5 {
 		padding: 3em 0;
@@ -1064,6 +1103,10 @@ p.copy a:hover{
 }
 /*-----480px-mediaquries----*/
 @media (max-width:480px){
+  .slide-container{
+    height: 170px;
+    min-height: 170px;
+  }
   a.view {
     display: none !important;
   }
@@ -1071,13 +1114,18 @@ p.copy a:hover{
 		width: 35%;
 	}
 	.slide-text-info {
-		margin: -6% 0 0;
+		margin: 1% 0 0;
 		left: 6%;
+    font-size: 90%;
 	}
 	.device-demo{
-    top: 45% !important;
-		right: 4%;
+    top: 2% !important;
+		right: 2%;
 		text-align:right;
+    z-index: 5;
+    width: 400px;
+    height: 600px;
+    float: right;
 	}
 	.big-device img{
 		width:initial;
@@ -1095,35 +1143,41 @@ p.copy a:hover{
 		text-align: center;
 	}
 	.slide-text-info h1 {
-		font-size: 1.2em;
 		margin: 0.0em 0;
 	}
 	.slide-text-info h2 {
-		font-size: 0.8em;
 		margin:0;
 	}
 	.slide-text {
 		margin: 0.5em 0;
 	}
+  .slide-text ul{
+    margin-left: -7%;
+  }
 	.slide-text ul li{
 		font-size: 0.7em;
 	}
 	.slide-text ul li:nth-child(2){
 		display:none;
 	}
-	.big-btns a {
+  .big-btns {
+    position: relative;
+		margin: 13% 0 0 10%;
+  }
+	/*.big-btns a {
 		border: 1px solid #282528;
 		padding: 0.5em 0.8em;
 		font-size: 0.7em;
-	}
+	}*/
   .big-btns .badges img {
     padding: 0;
-    margin: 0;
+    height: 120%;
+    width: 140%;
   }
   .big-btns .badges a {
     border: 0 !important;
     padding: 0em 0.2em !important;
-    margin: 0em !important;
+    margin: 0em 2em 0 0;
     width: 19%;
     z-index: 999 !important;
   }
@@ -1154,10 +1208,6 @@ p.copy a:hover{
 		list-style: none;
 		padding: 1em;
 		display: inline-block;
-	}
-	.big-btns {
-		margin: 0.5em 0em;
-		display: block;
 	}
 	.show-reel h5 {
 		padding: 3em 0;
@@ -1192,6 +1242,10 @@ p.copy a:hover{
 	.device-demo{
 		right: 4%;
 		text-align:right;
+    z-index: 5;
+    width: 400px;
+    height: 600px;
+    float: right;
 	}
 	.big-device img{
 		width:100%;
@@ -1228,13 +1282,14 @@ p.copy a:hover{
 	.slide-text ul li:nth-child(2){
 		display:none;
 	}
-  .big-btns a {
+  /*.big-btns a {
 		border: 1px solid #282528;
 		padding: 0.5em 0.8em;
 		font-size: 0.7em;
-	}
+	}*/
   .big-btns .badges img {
     width: 61%;
+    border: none;
   }
   .big-btns .badges a {
     border: 0 !important;
@@ -1271,8 +1326,8 @@ p.copy a:hover{
 		display: inline-block;
 	}
 	.big-btns {
-		margin: 0em 0em;
-		display: block;
+    position: relative;
+		margin: 13% 0 0 17%;
 	}
 	.show-reel h5 {
 		padding: 2em 0;
@@ -1284,9 +1339,9 @@ p.copy a:hover{
 	.item p {
 		font-size: 0.875em;
 	}
-	.big-btns a label {
+	/*.big-btns a label {
 		display: none;
-	}
+	}*/
 	.callbacks_tabs {
 		top: 95%;
 		left: 4%;

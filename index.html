@@ -31,6 +31,7 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.min.js"></script>
 
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {
@@ -96,13 +97,13 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 			<div class="container">
 				<div class="top-header">
 					<div class="logo">
-						<a href="#">
+						<a href="/" title="home" id="landing-page" name="landing-page">
 							<img src="images/goodshop-logo-text-299x77.png" title="logo" alt="logo" />
 						</a>
 					</div>
 					<!-- start-top-nav -->
 					<nav class="top-nav">
-						<ul class="top-nav">
+						<ul>
 							<li class="active"><a href="#home" class="scroll">Home </a></li>
 							<li class="page-scroll"><a href="#fea" class="scroll">Features</a></li>
 							<li class="page-scroll"><a href="#gallery" class="scroll">Gallery</a></li>
@@ -117,74 +118,63 @@ _______ _______ _______ _______ ______    _______ __   __ _______ _______
 		</div>
 		<!-- //End-header -->
 		<!-- start-slider-script -->
-		<script src="js/responsiveslides.min.js"></script>
 		<script type="text/javascript">
 			// You can also use "$(window).load(function() {"
-			$(function() {
-				$("#slider4").responsiveSlides({
-					auto: false,
-					pager: false,
-					nav: false,
-					speed: 500,
-					namespace: "callbacks",
-					before: function() {
-						$('.events').append("<li>before event fired.</li>");
-					},
-					after: function() {
-						$('.events').append("<li>after event fired.</li>");
-					}
-				});
-			});
+			// $(function() {
+			// 	$("#slider4").responsiveSlides({
+			// 		auto: false,
+			// 		pager: false,
+			// 		nav: false,
+			// 		speed: 500,
+			// 		namespace: "callbacks",
+			// 		before: function() {
+			// 			$('.events').append("<li>before event fired.</li>");
+			// 		},
+			// 		after: function() {
+			// 			$('.events').append("<li>after event fired.</li>");
+			// 		}
+			// 	});
+			// });
 		</script>
 		<!-- //End-slider-script -->
+		<!--device -->
 		<div id="top" class="callbacks_container">
 			<ul class="rslides" id="slider4">
-				<li>
-					<img src="images/slide.jpg" alt="">
+				<li class="slide-container">
 					<div class="caption text-center">
 						<div class="slide-text-info">
-							<h1>Introducing
-								<span>Goood Shop.</span>
-							</h1>
+							<h1>Introducing <span>Goood Shop.</span></h1>
 							<h2>Your interface to deals.</h2>
 							<div class="slide-text">
 								<ul>
-									<li>
-										<span>&nbsp;</span>Surprising finds at every click</li>
-									<li>
-										<span>&nbsp;</span>Deals from thrift stores across the nation</li>
-									<li>
-										<span>&nbsp;</span>Wide variety of antiques and collectibles</li>
+									<li><span>&nbsp;</span>Surprising finds at every click</li>
+									<li><span>&nbsp;</span>Deals from thrift stores across the nation</li>
+									<li><span>&nbsp;</span>Wide variety of antiques and collectibles</li>
 								</ul>
 							</div>
-							<div class="clearfix"> </div>
-							<div class="big-btns">
-								<div class="badges">
-									<a href="https://play.google.com/store/apps/details?id=com.goodshop.shopgoodwill" target="_blank" class="button" title="Get it on Google Play." role="button" id="ios" name="ios">
-										<img src="images/google_badge.png" alt="Google Play" />
-									</a>
-									<a href="https://itunes.apple.com/us/app/goood-shop/id1036097357?ls=1&amp;mt=8" target="_blank" class="button" title="Get it in the Apple Store." role="button" id="android" name="android">
-										<img src="images/apple_store_badge.png" alt="Apple Store" />
-									</a>
-								</div>
-								<a class="view" id="view-gallery" href="#gallery">
-										View Gallery
-									</a>
-							</div>
-							<div class="clearfix"></div>
 						</div>
+						<div class="big-btns">
+							<div class="badges">
+								<a href="https://play.google.com/store/apps/details?id=com.goodshop.shopgoodwill" target="_blank" class="button" title="Get it on Google Play." role="button" id="ios" name="ios">
+									<img src="images/google_badge.png" alt="Google Play" />
+								</a>
+								<a href="https://itunes.apple.com/us/app/goood-shop/id1036097357?ls=1&amp;mt=8" target="_blank" class="button" title="Get it in the Apple Store." role="button" id="android" name="android">
+									<img src="images/apple_store_badge.png" alt="Apple Store" />
+								</a>
+							</div>
+							<!-- <a class="view" id="view-gallery" href="#gallery">View Gallery</a> -->
+						</div>
+						<div class="clearfix"></div>
 					</div>
 				</li>
 			</ul>
+			<div class="device-demo">
+				<img src="images/device-in-hand.png" title="Goood Shop App in Google Play and Apple Store" alt="device" />
+			</div>
 		</div>
-		<div class="clearfix"></div>
-		<!--device -->
-		<div class="device-demo">
-			<img src="images/device-in-hand.png" title="Goood Shop App in Google Play and Apple Store" alt="device" />
-		</div>
-		<!-- //device -->
 		<!-- //End-slider -->
 	</div>
+	<div class="clearfix"></div>
 	<!--//header-section -->
 	<!-- features -->
 	<div id="fea" class="features">
